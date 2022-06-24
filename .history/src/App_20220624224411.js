@@ -11,9 +11,9 @@ import awsExports from './aws-exports';
 Amplify.configure(awsExports);
 
 function App({ isPassedToWithAuthenticator, signOut, user }) {
-  if (!isPassedToWithAuthenticator) {
-    throw new Error(`isPassedToWithAuthenticator was not provided`);
-  }
+  // if (!isPassedToWithAuthenticator) {
+  //   throw new Error(`isPassedToWithAuthenticator was not provided`);
+  // }
   
   return (
     <div className="App">
