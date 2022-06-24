@@ -1,0 +1,14 @@
+{
+  "resourceName": "s3b44908eb",
+  "policyUUID": "b44908eb",
+  "bucketName": "mediumblueprint8c446f6be39d4659b61ab752775445df",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

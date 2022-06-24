@@ -82,24 +82,17 @@ function App({ isPassedToWithAuthenticator, signOut, user }) {
           placeholder="Note description"
           value={formData.description}
         />
-        <input
-          type="file"
-          onChange={onChange}
-        />
         <button onClick={createTodo}>Create Note</button>
         <div style={{marginBottom: 30}}>
-        {
-          todos.map(todo => (
-            <div key={todo.id || todo.name}>
-              <h2>{todo.name}</h2>
-              <p>{todo.description}</p>
-              <button onClick={() => deleteTodo(todo)}>Delete note</button>
-              {
-                // todo.image && <img src={todo.image} style={{width: 400}} />
-              }
-            </div>
-          ))
-}
+          {
+            todos.map(note => (
+              <div key={note.id || note.name}>
+                <h2>{note.name}</h2>
+                <p>{note.description}</p>
+                <button onClick={() => deleteTodo(note)}>Delete note</button>
+              </div>
+            ))
+          }
         </div>
 
         <button onClick={signOut}>Sign out</button>
