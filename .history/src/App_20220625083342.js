@@ -95,7 +95,7 @@ function App({ isPassedToWithAuthenticator, signOut, user }) {
               <p>{todo.description}</p>
               <button onClick={() => deleteTodo(todo)}>Delete note</button>
               {
-                todo.image && <img src={todo.image} style={{width: 400}} alt="" />
+                todo.image && <img src={todo.image} style={{width: 400}} />
               }
             </div>
           ))
